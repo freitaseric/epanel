@@ -44,6 +44,19 @@ fun Application.configureRouting() {
 
                 call.respond(HttpStatusCode.OK, server)
             }
+
+            get("{id}/{action}") {
+                val id =
+                    if (call.parameters["id"] != null) UUID.fromString(call.parameters["id"]) else return@get call.respond(
+                        HttpStatusCode.BadRequest
+                    )
+
+                when (call.parameters["action"]) {
+                    "start" -> call.respond(HttpStatusCode.OK, serverRepository.start(id))
+                    "stop" -> call.respond(HttpStatusCode.OK, serverRepository.stop(id))
+                    else -> return@get call.respond(HttpStatusCode.BadRequest, "Invalid action")
+                }
+            }
         }
     }
 }

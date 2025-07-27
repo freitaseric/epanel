@@ -10,4 +10,6 @@ interface ServerRepository {
     fun findById(id: UUID): Server?
     fun findAll(): List<Server>
     fun findByName(name: String): Server?
+    fun start(id: UUID): Server?
+    fun stop(id: UUID): Server?
 }
