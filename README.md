@@ -12,25 +12,25 @@ applications, designed for self-hosting.
 <p align="center">
     <a href="#">
       <img
-        src="https://img.shields.io/github/actions/workflow/status/your-github-username/epanel/ci.yml?branch=main&style=for-the-badge"
+        src="https://img.shields.io/github/actions/workflow/status/freitaseric/epanel/ci.yml?branch=main&style=for-the-badge"
         alt="Build Status"
         />
     </a>
-    <a href="https://github.com/your-github-username/epanel/blob/main/LICENSE">
+    <a href="https://github.com/freitaseric/epanel/blob/main/LICENSE">
       <img
-        src="https://img.shields.io/github/license/your-github-username/epanel?style=for-the-badge&color=blue"
+        src="https://img.shields.io/github/license/freitaseric/epanel?style=for-the-badge&color=blue"
         alt="License"
         />
     </a>
-    <a href="https://github.com/your-github-username/epanel/stargazers">
+    <a href="https://github.com/freitaseric/epanel/stargazers">
       <img
-        src="https://img.shields.io/github/stars/your-github-username/epanel?style=for-the-badge&color=yellow"
+        src="https://img.shields.io/github/stars/freitaseric/epanel?style=for-the-badge&color=yellow"
         alt="GitHub Stars"
         />
     </a>
     <a href="#">
       <img
-        src="https://img.shields.io/discord/your-discord-id?style=for-the-badge&logo=discord&color=7289DA"
+        src="https://img.shields.io/discord/1382177395015946270?style=for-the-badge&logo=discord&color=7289DA"
         alt="Discord"
         />
     </a>
@@ -108,7 +108,7 @@ Ensure you have the following tools installed on your system:
 1. **Clone the Repository**
 
     ```sh
-    git clone [https://github.com/your-github-username/epanel.git](https://github.com/your-github-username/epanel.git)
+    git clone [https://github.com/freitaseric/epanel.git](https://github.com/freitaseric/epanel.git)
     cd epanel
     ```
 
