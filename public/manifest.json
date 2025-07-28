@@ -1,6 +1,6 @@
 {
-  "short_name": "TanStack App",
-  "name": "Create TanStack App Sample",
+  "short_name": "EPanel Dashboard",
+  "name": "A modern, powerful, and open-source control panel for managing your servers and applications, designed for self-hosting.",
   "icons": [
     {
       "src": "favicon.ico",
