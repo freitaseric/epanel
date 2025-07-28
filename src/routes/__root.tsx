@@ -1,25 +1,27 @@
-import { Outlet, createRootRouteWithContext } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
+import { Outlet, createRootRouteWithContext } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
-import Header from '../components/Header';
+import TanStackQueryLayout from '../integrations/tanstack-query/layout.tsx'
 
-import TanStackQueryLayout from '../integrations/tanstack-query/layout.tsx';
-
-import type { QueryClient } from '@tanstack/react-query';
+import { AppSidebar } from '@/components/AppSidebar.tsx'
+import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar.tsx'
+import type { QueryClient } from '@tanstack/react-query'
 
 interface MyRouterContext {
-	queryClient: QueryClient;
+	queryClient: QueryClient
 }
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
 	component: () => (
-		<>
-			<Header />
+		<SidebarProvider>
+			<AppSidebar />
+			<SidebarInset>
+				<Outlet />
+			</SidebarInset>
+			{/* Devtools for debugging the router */}
 
-			<Outlet />
-			<TanStackRouterDevtools />
-
-			<TanStackQueryLayout />
-		</>
+			{process.env.NODE_ENV !== 'production' && <TanStackRouterDevtools />}
+			{process.env.NODE_ENV !== 'production' && <TanStackQueryLayout />}
+		</SidebarProvider>
 	),
-});
+})
