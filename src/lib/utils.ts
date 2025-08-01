@@ -12,3 +12,7 @@ export function nameFallback(name: string) {
 		.join('')
 	return initials.length > 2 ? initials.slice(0, 2) : initials
 }
+
+export function capitalize(s: string) {
+	return s.charAt(0).toUpperCase() + s.slice(1)
+}

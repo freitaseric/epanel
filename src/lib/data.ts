@@ -1,4 +1,4 @@
-import type { NavItem, User } from '@/types'
+import type { NavItem } from '@/types'
 import {
 	CpuIcon,
 	DatabaseIcon,
@@ -12,19 +12,13 @@ import {
 } from 'lucide-react'
 
 export const sidebarData: {
-	user: User
 	platform: NavItem[]
 	admin: NavItem[]
 } = {
-	user: {
-		name: 'Eric Freitas',
-		email: 'contato@freitaseric.com',
-		avatar: '/avatars/shadcn.jpg',
-	},
 	platform: [
 		{
 			title: 'Dashboard',
-			url: '/dashboard',
+			url: '/',
 			icon: LayoutDashboardIcon,
 		},
 		{

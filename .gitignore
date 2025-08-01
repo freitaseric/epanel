@@ -69,10 +69,8 @@ web_modules/
 
 # dotenv environment variables file
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.example
 
 # Vite
 .vite/
@@ -114,3 +112,5 @@ rust-toolchain.toml
 .DS_Store
 # Windows
 Thumbs.db
+
+.tanstack

@@ -6,6 +6,11 @@ import tanstackRouter from '@tanstack/router-plugin/vite'
 import { resolve } from 'node:path'
 
 export default defineConfig({
+  server: {
+    host: process.env.APP_HOST || 'localhost',
+    port: Number(process.env.APP_PORT) || 5134,
+    strictPort: true,
+  },
   plugins: [
     tanstackRouter({ autoCodeSplitting: true }),
     viteReact(),

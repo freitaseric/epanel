@@ -74,15 +74,27 @@ EPanel is built as a monorepo with three core components:
 This project is a monorepo containing all three services:
 
 ```three
-/ (root)
-├── .github/      \# GitHub Actions CI/CD Workflows
-├── api/          \# Ktor API (Backend)
-├── daemon/       \# Rust Daemon (System Service)
-├── public/       \# Static assets for the frontend
-├── src/          \# React Panel (Frontend)
-├── package.json  \# Frontend dependencies
-├── vite.config.js
-└── README.md
+/(root)
+├── .github/            \# GitHub Actions CI/CD Workflows
+├── api/                \# Ktor API (Backend)
+├── daemon/             \# Rust Daemon (System Service)
+├── public/             \# Static assets for the frontend
+├── src/                \# React Panel (Frontend)
+├── .cta.json           \# TanStack Start configurations
+├── package.json        \# Frontend dependencies
+├── bun.lock            \# Frontend dependencies lockfile
+├── .gitignore          \# Ignore files and directories for git
+├── .markdownlint.json  \# Markdownlint configurations
+├── biome.json          \# Linter and formatter configurations
+├── CODE_OF_CONDUCT.md  \# Ruleset for contributors
+├── components.json     \# ShadCN UI configurations
+├── CONTRIBUTING.md     \# How to contribute
+├── epanel-logo.png     \# Panel logo
+├── index.html          \# The main html file
+├── LICENSE             \# The license described file
+├── README.md           \# This file
+├── tsconfig.json       \# The typescript configurations
+└── vite.config.ts      \# The vite configurations
 
 ````
 
